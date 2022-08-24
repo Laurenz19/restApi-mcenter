@@ -22,7 +22,7 @@ class AppFixtures extends Fixture
             $doctor->setFirstname($faker->firstName)
                    ->setLastname($faker->lastName)
                    ->setGrade('Medecin')
-                   ->setMatricule($c);
+                   ->setMatricule('num'+$c);
             
                     $manager->persist($doctor);
 
